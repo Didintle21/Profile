@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 90%;
+  max-width: 750px;
+  margin: 0 auto;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333;
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 5px 0;
+  color: #2ECC71; /* bright green */
+}
+
+h2 {
+  border-left: 6px solid #F6C1D1; /* pastel pink accent */
+  padding-left: 10px;
+}
+
+/* LINKS */
+a {
+  color: #2ECC71;
+}
+a:hover {
+  color: #1E9E57;
+  text-decoration: none;
+}
+
+/* HEADER & NAV */
+body > header {
+  margin-bottom: 40px;
+  border-bottom: 3px solid #F6C1D1;
+  padding-bottom: 10px;
+}
+
+header p {
+  margin: 5px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+nav a {
+  padding: 20px 0 40px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline wavy #F6C1D1;
+  color: #2ECC71;
+}
+
+@media (min-width: 781px) {
+  nav {
+    width: 250px;
+    float: right;
+  }
+  nav ul {
+    justify-content: end;
+  }
+}
+
+@media (max-width: 780px) {
+  header {
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F6C1D1;
+  }
+  nav a {
+    padding: 20px;
+  }
+}
+
+/* MAIN */
+main img {
+
+  width: 75%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 50px solid #EAF8F0;
+}
+
+/* FOOTER */
+footer {
+  border-top: 3px solid #2ECC71;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/* BLOG */
+article {
+  margin-bottom: 40px;
+  border-bottom: 2px dashed #F6C1D1;
+  padding-bottom: 40px;
+}
+
+article:last-of-type {
+  border: none;
+  padding: 0;
+}
+
+article header p,
+time {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2ECC71;
+}
+
+article h2 {
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+form {
+  padding: 30px 25px;
+  border: 2px solid #F6C1D1;
+  background: #EAF8F0;
+  border-radius: 12px;
+}
+
+legend {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0 0 15px;
+  color: #2ECC71;
+}
+
+input, textarea, button {
+  width: 100%;
+  border-radius: 6px;
+}
+
+input, textarea {
+  margin: 5px 0 15px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  font-weight: bold;
+  background-color: #2ECC71;
+  color: white;
+  font-size: 16px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27AE60;
+}
