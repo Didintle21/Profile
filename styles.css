@@ -62,23 +62,17 @@ a:hover {
 
 /* HEADER */
 
-body > header {
+header {
   background: #0b0f0c;
   color: white;
-  padding: 25px 30px;
-  margin-bottom: 0;
-  border-bottom: 4px solid #1fa463;
+  padding: 30px 40px;
+  border-bottom: 3px solid #1fa463;
 }
 
-nav a {
-  color: #d9f7e8;
-  font-weight: bold;
+header h1 {
+  margin: 0;
+  color: #1fa463;
 }
-
-nav a:hover {
-  color: #36d98a;
-}
-
 /* NAVIGATION */
 
 nav ul {
@@ -353,6 +347,75 @@ button:hover {
 
   font-size: 56px;
 
+  margin-bottom: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #0f6b45,
+    #1fa463,
+    #36d98a
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main {
+  width: 90%;
+  max-width: 850px;
+  margin: 40px auto;
+
+  background: #f5f2e8;
+  color: #222;
+
+  padding: 50px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.hero {
+
+  height: 420px;
+
+  border-radius: 12px;
+
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 40px;
+
+  background-image: url("images/profilepic1.png");
+  background-size: cover;
+  background-position: right center;
+}
+.hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(11,15,12,0.9),
+    rgba(11,15,12,0.4),
+    transparent
+  );
+
+  border-radius: 12px;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 48px;
   margin-bottom: 10px;
 
   background: linear-gradient(
