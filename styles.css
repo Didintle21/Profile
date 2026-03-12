@@ -1,47 +1,66 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+/* BODY */
 
 body {
   width: 90%;
   max-width: 750px;
   margin: 0 auto;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
   font-size: 18px;
   line-height: 1.4;
-  color: #333;
+
+  color: #e6e6e6;
   padding-top: 40px;
-  background-color: #fff;
+
+  background-color: #0b0f0c; /* deep black-green */
 }
 
 /* HEADINGS */
+
 h1, h2, h3 {
   font-family: Helvetica, Arial, sans-serif;
   margin: 5px 0;
-  color: #2ECC71; /* bright green */
+
+  /* evergreen gradient */
+  background: linear-gradient(
+    90deg,
+    #0b3d2e,
+    #0f6b45,
+    #1fa463
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
-  border-left: 6px solid #F6C1D1; /* pastel pink accent */
-  padding-left: 10px;
+  border-left: 5px solid #1fa463;
+  padding-left: 12px;
 }
 
 /* LINKS */
+
 a {
-  color: #2ECC71;
+  color: #1fa463;
 }
+
 a:hover {
-  color: #1E9E57;
+  color: #36d98a;
   text-decoration: none;
 }
 
-/* HEADER & NAV */
+/* HEADER */
+
 body > header {
   margin-bottom: 40px;
-  border-bottom: 3px solid #F6C1D1;
+  border-bottom: 2px solid #1fa463;
   padding-bottom: 10px;
 }
 
@@ -50,6 +69,8 @@ header p {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
 }
+
+/* NAVIGATION */
 
 nav ul {
   list-style-type: none;
@@ -65,123 +86,211 @@ nav ul li {
 nav a {
   padding: 20px 0 40px 20px;
   text-decoration: none;
-  color: #333;
+  color: #d9f7e8;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline wavy #F6C1D1;
-  color: #2ECC71;
+  color: #36d98a;
 }
 
+/* RESPONSIVE NAV */
+
 @media (min-width: 781px) {
+
   nav {
     width: 250px;
     float: right;
   }
+
   nav ul {
     justify-content: end;
   }
+
 }
 
 @media (max-width: 780px) {
+
   header {
     text-align: center;
   }
+
   nav ul {
     justify-content: center;
     margin-bottom: 20px;
-    border-bottom: 2px solid #F6C1D1;
+    border-bottom: 2px solid #1fa463;
   }
+
   nav a {
     padding: 20px;
   }
+
 }
 
 /* MAIN */
+
 main img {
 
   width: 75%;
   margin-bottom: 20px;
+
   border-radius: 12px;
-  border: 50px solid #EAF8F0;
+
+  border: 6px solid #123c2b;
+}
+
+/* OPTIONAL HERO IMAGE SUPPORT */
+
+.hero {
+  background-image: url("hero.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 120px 40px;
+  border-radius: 14px;
+  margin-bottom: 40px;
 }
 
 /* FOOTER */
+
 footer {
-  border-top: 3px solid #2ECC71;
+
+  border-top: 2px solid #1fa463;
+
   margin-top: 50px;
   padding-top: 20px;
+
   text-align: center;
+
+  color: #9de5c1;
 }
 
 /* BLOG */
+
 article {
+
   margin-bottom: 40px;
-  border-bottom: 2px dashed #F6C1D1;
+
+  border-bottom: 1px dashed #1fa463;
+
   padding-bottom: 40px;
+
 }
 
 article:last-of-type {
+
   border: none;
+
   padding: 0;
+
 }
 
 article header p,
 time {
+
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 15px;
+
+  font-size: 14px;
+
   text-transform: uppercase;
+
   font-weight: bold;
-  color: #2ECC71;
+
+  color: #36d98a;
+
 }
 
 article h2 {
+
   margin-bottom: 10px;
+
 }
 
-/* CONTACT */
+/* CONTACT FORM */
+
 form {
+
   padding: 30px 25px;
-  border: 2px solid #F6C1D1;
-  background: #EAF8F0;
+
+  border: 1px solid #1fa463;
+
+  background: #0f1713;
+
   border-radius: 12px;
+
 }
 
 legend {
+
   font-size: 22px;
+
   font-weight: bold;
+
   font-family: Helvetica, Arial, sans-serif;
+
   padding: 0 0 15px;
-  color: #2ECC71;
+
+  color: #36d98a;
+
 }
 
 input, textarea, button {
+
   width: 100%;
+
   border-radius: 6px;
+
 }
 
 input, textarea {
+
   margin: 5px 0 15px;
+
   height: 30px;
-  border: 1px solid #ccc;
+
+  border: 1px solid #1fa463;
+
   padding: 6px;
+
+  background: #0b0f0c;
+
+  color: white;
+
 }
 
 textarea {
+
   height: 100px;
+
 }
 
 button {
+
   font-weight: bold;
-  background-color: #2ECC71;
+
+  background: linear-gradient(
+    90deg,
+    #0f6b45,
+    #1fa463
+  );
+
   color: white;
+
   font-size: 16px;
+
   height: 42px;
+
   border: none;
+
   cursor: pointer;
+
 }
 
 button:hover {
-  background-color: #27AE60;
+
+  background: linear-gradient(
+    90deg,
+    #1fa463,
+    #36d98a
+  );
+
 }
