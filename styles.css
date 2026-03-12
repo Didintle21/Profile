@@ -9,19 +9,23 @@ html {
 /* BODY */
 
 body {
-  width: 90%;
-  max-width: 750px;
-  margin: 0 auto;
+  background: #0b0f0c;
+  margin: 0;
   font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
-
-  color: #e6e6e6;
-  padding-top: 40px;
-
-  background-color: #0b0f0c; /* deep black-green */
 }
 
+main {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 60px 40px;
+
+  background: #f6f3ea; /* warm beige */
+  color: #222;
+
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
 /* HEADINGS */
 
 h1, h2, h3 {
@@ -59,15 +63,20 @@ a:hover {
 /* HEADER */
 
 body > header {
-  margin-bottom: 40px;
-  border-bottom: 2px solid #1fa463;
-  padding-bottom: 10px;
+  background: #0b0f0c;
+  color: white;
+  padding: 25px 30px;
+  margin-bottom: 0;
+  border-bottom: 4px solid #1fa463;
 }
 
-header p {
-  margin: 5px 0;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 20px;
+nav a {
+  color: #d9f7e8;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #36d98a;
 }
 
 /* NAVIGATION */
@@ -293,4 +302,66 @@ button:hover {
     #36d98a
   );
 
+}
+.hero {
+
+  position: relative;
+
+  height: 420px;
+
+  border-radius: 14px;
+
+  margin-bottom: 40px;
+
+  background-image: url("your-photo.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(11,15,12,0.9),
+    rgba(11,15,12,0.4),
+    transparent
+  );
+
+  border-radius: 14px;
+}
+.hero-text {
+
+  position: relative;
+
+  z-index: 2;
+
+  color: white;
+
+  max-width: 400px;
+}
+
+.hero-text h1 {
+
+  font-size: 56px;
+
+  margin-bottom: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #0f6b45,
+    #1fa463,
+    #36d98a
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
