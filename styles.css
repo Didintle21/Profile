@@ -7,24 +7,12 @@ html {
 }
 
 /* BODY */
-
 body {
-  background: #0b0f0c;
   margin: 0;
   font-family:'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
-}
 
-main {
-  width: 90%;
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 60px 40px;
-
-  background: #f6f3ea; /* warm beige */
+  background: #f5f2e8; /* beige page background */
   color: #222;
-
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 /* HEADINGS */
 
@@ -66,12 +54,11 @@ header {
   background: #0b0f0c;
   color: white;
   padding: 30px 40px;
-  border-bottom: 3px solid #1fa463;
+  border-bottom: 4px solid #1fa463;
 }
 
 header h1 {
-  margin: 0;
-  color: #1fa463;
+  color: #36d98a;
 }
 /* NAVIGATION */
 
@@ -87,16 +74,12 @@ nav ul li {
 }
 
 nav a {
-  padding: 20px 0 40px 20px;
-  text-decoration: none;
-  color: #d9f7e8;
-  font-weight: bold;
+  color: #e6f7ee;
 }
 
 nav a:hover {
   color: #36d98a;
 }
-
 /* RESPONSIVE NAV */
 
 @media (min-width: 781px) {
@@ -134,12 +117,11 @@ nav a:hover {
 
 main img {
 
-  width: 75%;
-  margin-bottom: 20px;
-
-  border-radius: 12px;
-
-  border: 6px solid #123c2b;
+main {
+  width: 90%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 40px;
 }
 
 /* OPTIONAL HERO IMAGE SUPPORT */
@@ -157,14 +139,14 @@ main img {
 
 footer {
 
-  border-top: 2px solid #1fa463;
+footer {
+  background: #0b0f0c;
+  color: #d8f5e7;
 
-  margin-top: 50px;
-  padding-top: 20px;
-
+  padding: 25px;
   text-align: center;
 
-  color: #9de5c1;
+  border-top: 4px solid #1fa463;
 }
 
 /* BLOG */
